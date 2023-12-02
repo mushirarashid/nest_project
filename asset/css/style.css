@@ -130,6 +130,7 @@ p {
 
 #second_line .became:hover .text {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #second_line .icon .text P {
@@ -151,8 +152,9 @@ p {
   display: flex;
   column-gap: 25px;
   height: 100%;
-  margin-left: 10px;
+  margin-right: 21px;
   align-items: center;
+  justify-content: flex-end;
 }
 #second_line .icon .chat {
   position: absolute;
@@ -171,6 +173,7 @@ p {
 }
 #second_line .icon .cart:hover + .chat {
   opacity: 1;
+  cursor: pointer;
 }
 
 #second_line .icon .chat p {
@@ -198,6 +201,7 @@ p {
 }
 #second_line .icon .account:hover + .login {
   opacity: 1;
+  cursor: pointer;
 }
 #second_line .icon .login p {
   font-family: "Quicksand", sans-serif;
@@ -269,6 +273,7 @@ p {
 }
 .swiper-slide:hover {
   color: #fd2868;
+  cursor: pointer;
 }
 
 .navbar-nav .dropdown-menu {
@@ -278,14 +283,14 @@ p {
 /* ===================header nav_three start====================== */
 .navber_three {
   display: flex;
-  padding: 23px 0;
+  padding: 13px 0;
   border-bottom: 1px solid #ececec;
 }
 .navber_three .container {
   display: flex;
   row-gap: 27px;
 }
-.navber_three .container button {
+.navber_three .container .detail_list button {
   background: transparent;
   border: 0;
   font-family: "Quicksand", sans-serif;
@@ -293,12 +298,97 @@ p {
   font-weight: 700;
   font-size: 17px;
   padding: 0;
-  margin-right: 40px;
   color: #253d4e;
   transition: all linear 0.3s;
 }
-.navber_three .container button:hover {
+.navber_three .container .detail_list button:hover {
   color: #3bb77e;
+  cursor: pointer;
+}
+.navber_three .container .detail_list {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  column-gap: 36px;
 }
 
+.navber_three .container .btn_tex {
+  background: #3bb77e;
+  color: #ececec;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.navber_three .container .center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 5px;
+}
+.navber_three .container .center .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navber_three .container .center .text h3 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  color: #3bb77e;
+  margin-bottom: 0;
+}
+
+.navber_three .container .center .text p {
+  color: #7e7e7e;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+.navber_three .container .home {
+  position: relative;
+}
+.navber_three .container .home:hover .home_detail {
+  opacity: 1;
+  cursor: pointer;
+}
+.navber_three .container .home .home_detail {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  position: absolute;
+  border-radius: 10px;
+  width: 250px;
+  left: 0;
+  bottom: -22px;
+  padding: 25px 15px;
+  transform: translateY(100%);
+  transition: all linear 0.3s;
+  opacity: 0;
+}
+.navber_three .container .home .home_detail ul li {
+  margin-bottom: 19px;
+}
+.navber_three .container .home .home_detail ul li a {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #7e7e7e;
+  transition: all linear 0.2s;
+}
+.navber_three .container .home .home_detail ul li:hover a {
+  color: #3bb77e;
+  cursor: pointer;
+}
 /* =====================header nav_three end=========================== */
