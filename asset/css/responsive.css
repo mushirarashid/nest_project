@@ -1,0 +1,127 @@
+@media (min-width: 350px) and (max-width: 575.98px) {
+  #first_line {
+    border: 0;
+  }
+  #first_line .choto {
+    width: 100%;
+  }
+  #first_line .choto .image {
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #first_line .choto .image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  #first_line .choto .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    margin: 0 auto;
+  }
+  #first_line .choto .text h3 {
+    color: #253d4e;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  /* =========================== */
+
+  .btn-primary {
+    border: 0;
+    outline: none;
+    background: none;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+  }
+  .btn-primary:hover {
+    background: none;
+    border: none;
+  }
+
+  .btn-primaryr:focus {
+    box-shadow: none;
+  }
+  .btn-primary i {
+    color: #253d4e;
+    font-size: 25px;
+  }
+  .offcanvas.offcanvas-start {
+    width: 80%;
+    z-index: 9999;
+  }
+  .choto_icon i {
+    font-size: 25px;
+    color: #253d4e;
+  }
+  .choto_icon .choto_shopping {
+    position: relative;
+  }
+  .choto_icon .choto_shopping::after {
+    content: "0";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #3bb77e;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    left: -12px;
+    top: 0;
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .choto_form form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 18px;
+  }
+  #second_line {
+    padding-block: 0;
+    border-bottom: none;
+  }
+  .choto_form form input {
+    border: 1px solid #bce3c9;
+    border-radius: 5px;
+    font-family: "Nunito Sans";
+    outline: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #acacac;
+    padding: 17px 52px 15px 18px;
+    width: 100%;
+  }
+  .choto_form form a {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background: #3bb77e;
+    transition: all linear 0.3s;
+    font-size: 15px;
+  }
+}

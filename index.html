@@ -22,25 +22,26 @@
     <link rel="stylesheet" href="asset/css/swipwe.css" />
     <link rel="stylesheet" href="asset/css/slick.css" />
     <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/responsive.css" />
   </head>
   <body>
     <header>
       <div id="first_line">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="choto d-lg-none d-block">
+              <div class="image">
+                <div class="text">
+                  <h3>Senior’s Member Discount Days! Save 25% Each Tuesday</h3>
+                </div>
+                <img src="asset/image/notice.jpg" alt="" />
+              </div>
+            </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="collapse navbar-collapse d-lg-block d-none"
+              id="navbarSupportedContent"
+            >
               <div class="col-lg-4">
                 <div class="one">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -157,28 +158,111 @@
                 </div>
               </div>
             </div>
+
+            <!-- ===================== -->
           </div>
+
+          <!-- ========================== -->
         </nav>
       </div>
       <!-- ==========second_line================ -->
 
+      <div
+        class="second_line_choto d-lg-none d-block"
+        style="
+          box-shadow: 0px 10px 11px 1px rgba(237, 237, 237, 0.75);
+          -webkit-box-shadow: 0px 10px 11px 1px rgba(237, 237, 237, 0.75);
+          -moz-box-shadow: 0px 10px 11px 1px rgba(237, 237, 237, 0.75);
+          padding-bottom: 15px;
+        "
+      >
+        <div class="container">
+          <div
+            class="choto_main"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="logo" style="width: 120px">
+              <img src="asset/image/logo.png" alt="" width="120px" />
+            </div>
+            <div
+              class="btn_detail"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 10px;
+              "
+            >
+              <div class="choto_icon">
+                <i class="fa-solid fa-cart-shopping choto_shopping"></i>
+              </div>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel"
+              >
+                <div class="offcanvas-header">
+                  <!-- <h5
+                    class="offcanvas-title"
+                    id="offcanvasWithBothOptionsLabel"
+                  >
+                    Backdrop with scrolling
+                  </h5> -->
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- <div class="offcanvas-body">
+                  <p>
+                    Try scrolling the rest of the page to see this option in
+                    action.
+                  </p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="choto_form">
+            <form action="">
+              <input type="text" placeholder="Search for products..." />
+              <a href="#">Search</a>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div id="second_line">
         <div class="container">
           <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 d-lg-block d-none">
               <div class="logo">
                 <a href=""><img src="asset/image/logo.png" alt="" /></a>
               </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-lg-block d-none">
               <form action="">
                 <input type="text" placeholder="Search for products..." />
                 <a href="#">Search</a>
               </form>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 d-lg-block d-none">
               <div class="became">
                 <div class="text">
                   <p>Became Vendor</p>
@@ -190,7 +274,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-lg-block d-none">
               <div class="icon">
                 <div class="text" style="display: flex; column-gap: 13px">
                   <i class="fa-solid fa-arrows-spin shopping"> </i>
@@ -238,7 +322,7 @@
 
       <!-- ============================ -->
 
-      <div class="navber_three">
+      <div class="navber_three d-lg-block d-none">
         <div class="container">
           <div class="row" style="width: 100%">
             <div class="col-lg-2">

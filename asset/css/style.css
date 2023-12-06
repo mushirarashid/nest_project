@@ -169,11 +169,14 @@ p {
   text-align: center;
   line-height: 68px;
   opacity: 0;
+  visibility: hidden;
+  z-index: 999;
   transition: all linear 0.3s;
 }
 #second_line .icon .cart:hover + .chat {
   opacity: 1;
   cursor: pointer;
+  visibility: inherit;
 }
 
 #second_line .icon .chat p {
@@ -197,11 +200,13 @@ p {
   text-align: center;
   line-height: 68px;
   opacity: 0;
+  visibility: hidden;
   transition: all linear 0.3s;
 }
 #second_line .icon .account:hover + .login {
   opacity: 1;
   cursor: pointer;
+  visibility: inherit;
 }
 #second_line .icon .login p {
   font-family: "Quicksand", sans-serif;
@@ -285,6 +290,7 @@ p {
   display: flex;
   padding: 13px 0;
   border-bottom: 1px solid #ececec;
+  z-index: -1;
 }
 .navber_three .container {
   display: flex;
@@ -346,8 +352,11 @@ p {
   line-height: 26px;
   color: #3bb77e;
   margin-bottom: 0;
+  transition: all linear 0.3s;
 }
-
+.navber_three .container .center .text:hover h3 {
+  color: #fd2868;
+}
 .navber_three .container .center .text p {
   color: #7e7e7e;
   font-family: "Lato", sans-serif;
