@@ -57,7 +57,7 @@
     font-size: 25px;
   }
   .offcanvas.offcanvas-start {
-    width: 80%;
+    width: 85%;
     z-index: 9999;
   }
   .choto_icon i {
@@ -123,5 +123,204 @@
     background: #3bb77e;
     transition: all linear 0.3s;
     font-size: 15px;
+  }
+
+  .btn-close {
+    --bs-btn-close-color: #000;
+    --bs-btn-close-bg: none;
+  }
+  .offcanvas-header {
+    display: inline-block;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    border-bottom: 1px solid #e0dfdf;
+  }
+
+  .inner_box_detail .choto_inner_form form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 18px;
+  }
+
+  .inner_box_detail .choto_inner_form form input {
+    border-radius: 5px;
+    font-family: "Nunito Sans";
+    outline: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #a1a1a1;
+    height: 45px;
+    padding: 3px 50px 3px 20px;
+    background: #f2f3f4;
+    width: 100%;
+    border: 0;
+  }
+  .inner_box_detail .choto_inner_form form i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #5a5b5b;
+    font-size: 15px;
+  }
+  .inner_box_detail .duita_button {
+    margin-block: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .inner_box_detail .duita_button .one a {
+    color: #3bb77e;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 45px;
+    background: #fde1bd;
+    transition: all linear 0.3s;
+  }
+  .inner_box_detail .duita_button .one:hover a {
+    margin-top: -10px;
+  }
+
+  .inner_box_detail .duita_button .two a {
+    color: #626262;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 35px;
+    background: #eeeeee;
+    transition: all linear 0.3s;
+  }
+  .inner_box_detail .duita_button .two:hover a {
+    margin-top: -10px;
+    color: #3bb77e;
+    background: #fde1bd;
+  }
+
+  .choto_home_detail:hover {
+    cursor: pointer;
+  }
+  .choto_home_detail {
+    background: #ffffff;
+    border: 1px solid #ececec;
+    position: absolute;
+    border-radius: 10px;
+    width: 250px;
+    left: 0;
+    bottom: -22px;
+    padding: 25px 15px;
+  }
+  .choto_home_detail ul li {
+    margin-bottom: 19px;
+  }
+  .choto_home_detail ul li a {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #7e7e7e;
+  }
+  .choto_home_detail ul li:hover a {
+    cursor: pointer;
+  }
+  .inner_box_detail .dropdown-menu {
+    text-align: left;
+    border: 0;
+    margin-left: 10px;
+    border-radius: 0;
+  }
+
+  .inner_box_detail .dropdown-menu li a {
+    color: #253d4e;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .inner_box_detail .nav-item a {
+    color: #253d4e;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .inner_box_detail .nav-item {
+    padding-block: 5px;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: #253d4e;
+  }
+  .signup_box {
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .signup_box .number {
+    display: flex;
+    column-gap: 10px;
+  }
+  .signup_box .number .icon i {
+    color: #3bb77e;
+  }
+  .signup_box .number .text p {
+    color: #151515;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .signup_box .two_bnt {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .signup_box .two_bnt .one {
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+    border-radius: 5px;
+  }
+  .signup_box .two_bnt .one a {
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .inner_box_detail .social_icon {
+    margin-block: 20px 30px;
+    display: flex;
+    column-gap: 10px;
+  }
+  .inner_box_detail .social_icon i {
+    width: 30px;
+    height: 30px;
+    background: #3bb77e;
+    color: #ffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+  }
+  .inner_box_detail .social_icon i:hover {
+    margin-top: -5px;
   }
 }
