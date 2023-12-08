@@ -65,6 +65,11 @@
     position: absolute;
     height: 150%;
   }
+  .btn-close {
+    --bs-btn-close-focus-shadow: none;
+    --bs-btn-close-focus-opacity: 0;
+    --bs-btn-close-disabled-opacity: 0;
+  }
   .choto_icon i {
     font-size: 25px;
     color: #253d4e;
