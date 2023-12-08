@@ -59,6 +59,11 @@
   .offcanvas.offcanvas-start {
     width: 85%;
     z-index: 9999;
+    height: 120%;
+  }
+  .offcanvas {
+    position: absolute;
+    height: 150%;
   }
   .choto_icon i {
     font-size: 25px;
@@ -305,7 +310,7 @@
     font-size: 16px;
   }
   .inner_box_detail .social_icon {
-    margin-block: 20px 30px;
+    margin-block: 30px;
     display: flex;
     column-gap: 10px;
   }
@@ -322,5 +327,16 @@
   }
   .inner_box_detail .social_icon i:hover {
     margin-top: -5px;
+  }
+  .inner_box_detail .late_line .text {
+    margin-block: 10px 20px;
+  }
+  .inner_box_detail .late_line .text p {
+    color: #a1a1a1;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 10px;
   }
 }
