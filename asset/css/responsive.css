@@ -59,7 +59,7 @@
   .offcanvas.offcanvas-start {
     width: 85%;
     z-index: 9999;
-    height: 120%;
+    height: 900px;
   }
   .offcanvas {
     position: absolute;
