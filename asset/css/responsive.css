@@ -267,6 +267,9 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .inner_box_detail .nav-item {
     padding-block: 5px;
