@@ -45,18 +45,18 @@
               <div class="col-lg-4">
                 <div class="one">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                       <a class="nav-link active" aria-current="page" href="#"
                         >About Us</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                       <a class="nav-link" href="#">My Account</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link" href="#"> Wishlist </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                       <a class="nav-link" aria-disabled="true"
                         >Order Tracking</a
                       >
@@ -116,6 +116,7 @@
                         aria-expanded="false"
                       >
                         English
+                        <i class="fa-solid fa-chevron-down"></i>
                       </a>
                       <ul class="dropdown-menu">
                         <li>
@@ -124,7 +125,6 @@
                         <li>
                           <a class="dropdown-item" href="#">Deutsch</a>
                         </li>
-                        <li><hr class="dropdown-divider" /></li>
                         <li>
                           <a class="dropdown-item" href="#">Pyccknn</a>
                         </li>
@@ -140,6 +140,7 @@
                         aria-expanded="false"
                       >
                         INR
+                        <i class="fa-solid fa-chevron-down"></i>
                       </a>
                       <ul class="dropdown-menu">
                         <li>
@@ -298,22 +299,87 @@
                           role="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
+                          style="position: relative"
                         >
                           Shop
                         </a>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="#">Action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li><hr class="dropdown-divider" /></li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
+                          <div
+                            class="shop_detail"
+                            style="
+                              display: flex;
+                              justify-content: space-between;
+                            "
+                          >
+                            <div class="first_line" style="width: 449px">
+                              <ul>
+                                <div class="tittle"><h3>Product Style</h3></div>
+                                <li><a href="#">Product Style One</a></li>
+                                <li><a href="#">Product Style Two</a></li>
+                                <li><a href="#">Product Style Three</a></li>
+                                <li><a href="#">Product Style Four</a></li>
+                                <li><a href="#">Product Style More</a></li>
+                                <li><a href="#">Product Style Three</a></li>
+                                <li><a href="#">Shop Widw</a></li>
+                                <li><a href="#">Shop Widw Left</a></li>
+                                <li><a href="#">Shop Widw Left</a></li>
+                                <li><a href="#">Shop Widw Left</a></li>
+                                <li><a href="#">Shop Widw Left</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="first_line" style="width: 449px">
+                              <ul style="margin-bottom: 50px">
+                                <div class="tittle">
+                                  <h3>Product Single Style</h3>
+                                </div>
+                                <li><a href="#">Product Style One</a></li>
+                                <li><a href="#">Product Style Two</a></li>
+                                <li><a href="#">Product Style Three</a></li>
+                                <li><a href="#">Product Style Four</a></li>
+                              </ul>
+
+                              <ul>
+                                <div class="tittle">
+                                  <h3>Product Single Fatures</h3>
+                                </div>
+                                <li><a href="#">Product Style One</a></li>
+                                <li><a href="#">Product Style Two</a></li>
+                                <li><a href="#">Product Style Three</a></li>
+                                <li><a href="#">Product Style Four</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="first_line" style="width: 449px">
+                              <ul>
+                                <div class="tittle"><h3>Product Style</h3></div>
+                                <li><a href="#">Product Style One</a></li>
+                                <li><a href="#">Product Style Two</a></li>
+                                <li><a href="#">Product Style Three</a></li>
+                                <li><a href="#">Product Style Four</a></li>
+                                <li><a href="#">Product Style More</a></li>
+                                <li><a href="#">Product Style Three</a></li>
+                                <li><a href="#">Shop Widw</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="first_line" style="width: 449px">
+                              <ul>
+                                <div class="image_design">
+                                  <div class="image">
+                                    <img src="asset/image/shop.jpg" alt="" />
+                                    <div class="text">
+                                      <h4>Orajin</h4>
+                                      <h2>
+                                        Everyday Fresh & Clean with Our Products
+                                      </h2>
+                                      <a href="#">Shop Now</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
                         </ul>
                       </li>
 
@@ -477,7 +543,7 @@
           </div>
         </div>
       </div>
-
+      <!-- ====================================================================== -->
       <div id="second_line">
         <div class="container">
           <div class="row">
@@ -605,6 +671,7 @@
                   aria-expanded="false"
                 >
                   Home
+                  <i class="fa-solid fa-chevron-down"></i>
                 </button>
 
                 <div class="home_detail">
@@ -624,7 +691,7 @@
 
               <button class="btn btn-secondary" type="button">About</button>
 
-              <div class="dropdown">
+              <div class="dropdown shop">
                 <button
                   class="btn btn-secondary dropdown-toggle"
                   type="button"
@@ -632,14 +699,76 @@
                   aria-expanded="false"
                 >
                   Shop
+                  <i class="fa-solid fa-chevron-down"></i>
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+
+                <div
+                  class="shop_detail"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div class="first_line" style="width: 449px">
+                    <ul>
+                      <div class="tittle"><h3>Product Style</h3></div>
+                      <li><a href="#">Product Style One</a></li>
+                      <li><a href="#">Product Style Two</a></li>
+                      <li><a href="#">Product Style Three</a></li>
+                      <li><a href="#">Product Style Four</a></li>
+                      <li><a href="#">Product Style More</a></li>
+                      <li><a href="#">Product Style Three</a></li>
+                      <li><a href="#">Shop Widw</a></li>
+                      <li><a href="#">Shop Widw Left</a></li>
+                      <li><a href="#">Shop Widw Left</a></li>
+                      <li><a href="#">Shop Widw Left</a></li>
+                      <li><a href="#">Shop Widw Left</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="first_line" style="width: 449px">
+                    <ul style="margin-bottom: 50px">
+                      <div class="tittle"><h3>Product Single Style</h3></div>
+                      <li><a href="#">Product Style One</a></li>
+                      <li><a href="#">Product Style Two</a></li>
+                      <li><a href="#">Product Style Three</a></li>
+                      <li><a href="#">Product Style Four</a></li>
+                    </ul>
+
+                    <ul>
+                      <div class="tittle"><h3>Product Single Fatures</h3></div>
+                      <li><a href="#">Product Style One</a></li>
+                      <li><a href="#">Product Style Two</a></li>
+                      <li><a href="#">Product Style Three</a></li>
+                      <li><a href="#">Product Style Four</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="first_line" style="width: 449px">
+                    <ul>
+                      <div class="tittle"><h3>Product Style</h3></div>
+                      <li><a href="#">Product Style One</a></li>
+                      <li><a href="#">Product Style Two</a></li>
+                      <li><a href="#">Product Style Three</a></li>
+                      <li><a href="#">Product Style Four</a></li>
+                      <li><a href="#">Product Style More</a></li>
+                      <li><a href="#">Product Style Three</a></li>
+                      <li><a href="#">Shop Widw</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="first_line" style="width: 449px">
+                    <ul>
+                      <div class="image_design">
+                        <div class="image">
+                          <img src="asset/image/shop.jpg" alt="" />
+                          <div class="text">
+                            <h4>Orajin</h4>
+                            <h2>Everyday Fresh & Clean with Our Products</h2>
+                            <a href="#">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               <div class="dropdown home">
@@ -650,6 +779,7 @@
                   aria-expanded="false"
                 >
                   Vendors
+                  <i class="fa-solid fa-chevron-down"></i>
                 </button>
 
                 <div class="home_detail">
@@ -662,7 +792,7 @@
                 </div>
               </div>
 
-              <div class="dropdown">
+              <div class="dropdown mega">
                 <button
                   class="btn btn-secondary dropdown-toggle"
                   type="button"
@@ -670,14 +800,85 @@
                   aria-expanded="false"
                 >
                   Mega Menu
+                  <i class="fa-solid fa-chevron-down"></i>
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+
+                <div
+                  class="mega_detail"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <div class="first_line" style="width: 449px">
+                    <ul>
+                      <div class="tittle"><h3>Products 30% Discount</h3></div>
+                      <li>
+                        <a href="#">Canada Dry Ginger Ale – 2 L Bottle</a>
+                      </li>
+                      <li>
+                        <a href="#"> Cauliflower Species Brassica the genus</a>
+                      </li>
+                      <li>
+                        <a href="#">Nestle Original Mate Coffee Creamer</a>
+                      </li>
+                      <li>
+                        <a href="#">Onion hybrid varieties genus Allium</a>
+                      </li>
+                      <li><a href="#">Seeds of Change Organic Red Rice </a></li>
+                    </ul>
+                  </div>
+
+                  <div class="first_line" style="width: 449px">
+                    <ul style="margin-bottom: 50px">
+                      <div class="tittle"><h3>Products 20% Discount</h3></div>
+                      <li>
+                        <a href="#">Canada Dry Ginger Ale – 2 L Bottle</a>
+                      </li>
+                      <li>
+                        <a href="#"> Cauliflower Species Brassica the genus</a>
+                      </li>
+                      <li>
+                        <a href="#">Nestle Original Mate Coffee Creamer</a>
+                      </li>
+                      <li>
+                        <a href="#">Onion hybrid varieties genus Allium</a>
+                      </li>
+                      <li><a href="#">Seeds of Change Organic Red Rice </a></li>
+                    </ul>
+                  </div>
+
+                  <div class="first_line" style="width: 449px">
+                    <ul>
+                      <div class="tittle"><h3>Products 10% Discount</h3></div>
+                      <li>
+                        <a href="#">Canada Dry Ginger Ale – 2 L Bottle</a>
+                      </li>
+                      <li>
+                        <a href="#"> Cauliflower Species Brassica the genus</a>
+                      </li>
+                      <li>
+                        <a href="#">Nestle Original Mate Coffee Creamer</a>
+                      </li>
+                      <li>
+                        <a href="#">Onion hybrid varieties genus Allium</a>
+                      </li>
+                      <li><a href="#">Seeds of Change Organic Red Rice </a></li>
+                    </ul>
+                  </div>
+
+                  <div class="first_line" style="width: 449px">
+                    <ul>
+                      <div class="image_design">
+                        <div class="image">
+                          <img src="asset/image/banner-1.png" alt="" />
+                          <div class="text">
+                            <h4>Orajin</h4>
+                            <h2>Everyday Fresh & Clean with Our Products</h2>
+                            <a href="#">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               <div class="dropdown home">
@@ -688,6 +889,7 @@
                   aria-expanded="false"
                 >
                   Blog
+                  <i class="fa-solid fa-chevron-down"></i>
                 </button>
 
                 <div class="home_detail">
@@ -713,6 +915,7 @@
                   aria-expanded="false"
                 >
                   Pages
+                  <i class="fa-solid fa-chevron-down"></i>
                 </button>
 
                 <div class="home_detail">

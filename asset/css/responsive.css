@@ -190,7 +190,7 @@
     font-size: 14px;
     text-align: center;
     border-radius: 5px;
-    padding: 8px 45px;
+    padding: 8px 40px;
     background: #fde1bd;
     transition: all linear 0.3s;
   }
@@ -206,7 +206,7 @@
     font-size: 14px;
     text-align: center;
     border-radius: 5px;
-    padding: 8px 35px;
+    padding: 8px 30px;
     background: #eeeeee;
     transition: all linear 0.3s;
   }
@@ -244,19 +244,21 @@
     cursor: pointer;
   }
   .inner_box_detail .dropdown-menu {
-    text-align: left;
+    text-align: center;
     border: 0;
     margin-left: 10px;
     border-radius: 0;
+    padding: 0;
   }
 
   .inner_box_detail .dropdown-menu li a {
-    color: #253d4e;
+    color: #7e7e7e;
     font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
+    margin-bottom: 10px;
   }
   .inner_box_detail .nav-item a {
     color: #253d4e;
@@ -343,5 +345,137 @@
     font-weight: 400;
     font-size: 13px;
     margin-bottom: 10px;
+  }
+  .inner_box_detail .shop_detail {
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border: 1px solid #acacac;
+    z-index: 99999;
+    width: 100%;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .first_line {
+    width: auto !important;
+  }
+  ul {
+    padding-left: 0 !important;
+  }
+  .first_line .tittle {
+    margin-block: 10px;
+    text-align: center;
+  }
+  .first_line .tittle h3 {
+    margin-block: 14px;
+    text-align: center;
+    color: #3bb77e;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 14px;
+  }
+  /* =------------------ */
+  .inner_box_detail .shop {
+    position: relative;
+  }
+  .inner_box_detail .shop:hover .shop_detail {
+    opacity: 1;
+    cursor: pointer;
+    visibility: inherit;
+  }
+  .inner_box_detail .shop .shop_detail {
+    background: #ffffff;
+    border: 1px solid #ececec;
+    position: absolute;
+    border-radius: 10px;
+    width: 1580px;
+    height: 481px;
+    left: -670px;
+    bottom: -22px;
+    padding: 25px 15px;
+    transform: translateY(100%);
+    transition: all linear 0.3s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .inner_box_detail .shop .shop_detail .first_line ul li {
+    margin-bottom: 10px;
+  }
+  .inner_box_detail .shop .shop_detail .first_line ul li a {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #7e7e7e;
+    transition: all linear 0.2s;
+  }
+  .inner_box_detail .shop .shop_detail .first_line ul li:hover a {
+    color: #3bb77e;
+    cursor: pointer;
+  }
+  .inner_box_detail .shop .shop_detail .first_line ul .tittle h3 {
+    color: #3bb77e;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
+
+  .inner_box_detail .image_design {
+    width: 100%;
+  }
+  .inner_box_detail .image_design .image {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+  }
+  .image_design .image img {
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .image_design .image .text {
+    position: absolute;
+    left: 41px;
+    top: 57%;
+    transform: translateY(-50%);
+  }
+
+  .inner_box_detail .image_design .image .text h2 {
+    color: #253d4e;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    width: 108px;
+    text-align: left;
+  }
+  .inner_box_detail .image_design .image .text h4 {
+    color: #fdc040;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 11px;
+    margin-bottom: 13px;
+    text-align: left;
+  }
+  .inner_box_detail .image_design .image .text a {
+    color: #ffffff;
+    background: #3bb77e;
+    padding: 11px 14px;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: -22px;
   }
 }
